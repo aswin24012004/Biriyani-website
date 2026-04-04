@@ -1,0 +1,17 @@
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+  name: sample-website
+  labels:
+    app: frontend
+    
+spec:
+  containers:
+  - name: sample-website-container
+    image: aswinc7/biriyani-website:latest
+    ports:
+    - containerPort: 5000
+    
+    
